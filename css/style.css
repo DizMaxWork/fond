@@ -94,3 +94,18 @@
     font-style: normal;
 
 }
+body{
+    font-family: Manrope;
+}
+.mobile-menu{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    padding: 16px 15px;
+    color: #373737;
+    background-color: #FBFBFB;
+    z-index: 1;
+ }
+ .btn-style{
+    background-color:  #7289A0;
+ }

@@ -6,9 +6,91 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Архистратинг</title>
 </head>
 <body>
+    <div>
+        <div class="mobile-menu hidden">
+            <div class="flex justify-between items-center">
+                <div class="mobile-menu__close w-8 -mr-2 hidden">
+                    <img src="img/burger-close.svg" alt="">
+                </div>
+                <div class="btn-style px-4 py-2 rounded-sm">
+                    <button class="text-white">
+                        Пожертвовать
+                    </button>
+                </div>
+            </div>
+            <div style="border-bottom: 1px solid #373737; padding-top: 1rem;"></div>
+            <div class="pt-8">
+                <ul>
+                    <li class="mb-4 text-3xl" style="font-family: Alegreya; color: #7289A0;">
+                        <a href="index.html">
+                            О фонде
+                        </a>
+                    </li>
+                    <li class="mb-4 text-3xl" style="font-family: Alegreya; color: #7289A0;">
+                        <a href="inter.html">
+                            Храмы на попечительстве
+                        </a>
+                    </li>
+                    <li class="mb-4 text-3xl" style="font-family: Alegreya; color: #7289A0;">
+                        <a href="timetable.html">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header style="position: relative; background-color: #fbfbfb;">
+        <div class="container mx-auto sm:px-5 px-4">
+            <div class="flex xl:items-center justify-between">
+                <nav>
+                    <ul class="flex -mx-3 xl:flex hidden">
+                        <li class="font-medium mx-3" style="color: #363636;">
+                            <a href="index.html" class="link">
+                                О фонде
+                            </a>
+                        </li>
+                        <li class="font-medium mx-3" style="color: #363636;">
+                            <a href="inter.html" class="link">
+                                Храмы на попечительстве
+                            </a>
+                        </li>
+                        <li class="font-medium mx-3" style="color: #363636;">
+                            <a href="timetable.html" class="link">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="w-3/12 block">
+                    <a href="#">
+                        <img src="img/logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="btn-style px-20 py-10 rounded-sm">
+                    <button class="text-white font-bold text-xl">
+                        Пожертвовать
+                    </button>
+                </div>
+                <div class="burger__menu hidden">
+                    <div>
     
+                    </div>
+                </div>
+                <div class="bars ml-auto sm:mt-6 mt-4 xl:hidden cursor-pointer" onclick="">
+                    <img src="img/burger.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div style="border: 1px solid #ABABAB;"></div>
+    </header>
+    <script src="js/jquery-js.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
