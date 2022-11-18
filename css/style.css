@@ -101,6 +101,15 @@ body{
 h1,h2,h3,h4{
     font-family: 'Alegreya';
 }
+.color-72{
+    color: #7289A0;
+}
+.color-fb{
+    color: #FBF7F7;
+}
+.bg-36{
+    background-color: #363636;
+}
 .mobile-menu{
     position: fixed;
     width: 100%;
@@ -138,5 +147,17 @@ h1,h2,h3,h4{
     height: 24px;
     background-image: url(../img/OK.svg);
     top: 0;
+    left: 0;
+ }
+ .text-32{
+    font-size: 32px;
+ }
+ .pin::before{
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 13px;
+    background-image: url(../img/pin.svg);
+    top: 5px;
     left: 0;
  }
