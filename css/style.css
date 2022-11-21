@@ -107,11 +107,23 @@ h1,h2,h3,h4{
 .color-fb{
     color: #FBF7F7;
 }
+.dark-blue{
+    color: #1F3040;
+}
+.bg-57{
+    background-color: #D57C14;
+}
 .bg-36{
     background-color: #363636;
 }
 .w_23{
     width: 23%;
+}
+.size-64{
+    font-size: 64px;
+}
+.big-text{
+    text-transform: uppercase;
 }
 .mobile-menu{
     position: fixed;
