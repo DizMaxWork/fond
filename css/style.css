@@ -110,6 +110,9 @@ h1,h2,h3,h4{
 .bg-36{
     background-color: #363636;
 }
+.w_23{
+    width: 23%;
+}
 .mobile-menu{
     position: fixed;
     width: 100%;
