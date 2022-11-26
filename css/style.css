@@ -14,6 +14,9 @@ h1,h2,h3,h4{
 .dark-blue{
     color: #1F3040;
 }
+.color-D47{
+    color: #D47C14;
+}
 .bg-57{
     background-color: #D57C14;
 }
@@ -88,3 +91,118 @@ h1,h2,h3,h4{
     width: 64px;
     height: 64px;
  }
+ .text {
+    max-width: 700px;
+    margin: 0 0 30px;
+    border-radius: 5px;
+    padding: 7px 15px;
+    box-sizing: border-box;
+  }
+  
+  .tabs {
+    margin: 0 0 30px;
+  }
+  .tabs__caption {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    list-style: none;
+    position: relative;
+    margin: -1px 0 0 -1px;
+  }
+  .tabs__caption li:last-child:before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: -2px;
+    z-index: -1;
+    height: 5px;
+  }
+  .tabs__caption:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  .tabs__caption li {
+    padding: 24px 0;
+    margin: 1px 0 0 1px;
+    position: relative;
+  }
+  .tabs__caption li:not(.active) {
+    cursor: pointer;
+    margin-left: 3rem;
+  }
+  .tabs__caption .active {
+    color: #D47C14;
+    margin-left: 0px;
+  }
+  .tabs__caption .active:after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 5px;
+  }
+  .tabs__content {
+    display: none;
+    padding: 7px 15px;
+  }
+  .tabs__content.active {
+    display: block;
+  }
+  
+  .vertical .tabs__caption {
+    float: left;
+    display: block;
+  }
+  .vertical .tabs__caption li {
+    float: none;
+  }
+  .vertical .tabs__caption li:last-child:before {
+    display: none;
+  }
+  .vertical .tabs__caption .active:after {
+    left: auto;
+    top: 0;
+    right: -2px;
+    bottom: 0;
+    width: 2px;
+    height: auto;
+  }
+  .vertical .tabs__content {
+    overflow: hidden;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .tabs__caption li {
+      -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+      flex: 1 0 auto;
+    }
+    .vertical .tabs__caption {
+      float: none;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+    }
+    .vertical .tabs__caption li {
+      border-width: 2px 2px 0;
+      border-radius: 5px 5px 0 0;
+    }
+    .vertical .tabs__caption li:last-child:before {
+      display: block;
+    }
+    .vertical .tabs__caption .active:after {
+      top: auto;
+      bottom: -5px;
+      left: 0;
+      right: 0;
+      width: auto;
+      height: 5px;
+    }
+  }
