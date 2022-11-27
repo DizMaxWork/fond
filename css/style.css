@@ -35,6 +35,10 @@ h1,h2,h3,h4{
 .bord-bot{
     border-bottom: 2px solid #1F3040;
 }
+.link-style{
+  border-bottom: 2px solid #D57C14; 
+  color: #D47C14;
+}
 .mobile-menu{
     position: fixed;
     width: 100%;
