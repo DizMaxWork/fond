@@ -213,3 +213,72 @@ h1,h2,h3,h4{
       height: 5px;
     }
   }
+  .acc-container {
+    padding-top: 4rem;
+  }
+  
+  .acc {
+    margin-bottom: 10px;
+  }
+  
+  .acc-head {
+    padding: 15px 10px;
+    font-size: 22px;
+    position: relative;
+    cursor: pointer;
+   }
+  
+   .acc-head::before,
+   .acc-head::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    background-color: #7289A0;
+    transition: all .3s;
+   }
+
+   .acc-head.active::before,
+   .acc-head.active::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    background-color: #D47C14;
+    transition: all .3s;
+   }
+  
+   .acc-head::before {
+    right: 30px;
+    width: 3px;
+    height: 20px;
+    margin-top: -10px;
+  }
+  
+  .acc-head::after {
+    right: 21px;
+    width: 20px;
+    height: 3px;
+    margin-top: -2px;
+  }
+  
+  .acc-head p {
+    font-weight: 500;
+    font-family: Alegreya;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+  
+  .acc-content {
+    padding: 15px 10px;
+    display: none;
+  }
+          
+  .acc-head.active::before {
+      transform: rotate(90deg);
+  }
+  .acc-head:not(.active) {
+    color: #7289A0;
+    cursor: pointer;
+  }
+  .acc-head.active {
+    color: #D47C14;
+  }
