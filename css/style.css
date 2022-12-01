@@ -218,7 +218,10 @@ h1,h2,h3,h4{
   }
   
   .acc {
-    margin-bottom: 10px;
+    border-top: 2px solid #7289A0;
+  }
+  .acc:last-child{
+    border-bottom: 2px solid #7289A0;
   }
   
   .acc-head {
