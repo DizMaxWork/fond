@@ -285,3 +285,60 @@ h1,h2,h3,h4{
   .acc-head.active {
     color: #D47C14;
   }
+  .hover-1 {
+    display: inline-block;
+    padding: 5px 10px;
+    position: relative;
+  }
+  .hover-1::after { 
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    background: none repeat scroll 0 0 transparent;
+    height: 2px;
+    width: 0;
+    background: #7289A0;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  }
+  .hover-1:hover::after { 
+    width: 100%; 
+    left: 0; 
+  }
+  .hover-2{
+    transition: background-color 0.5s ease;
+  }
+  .hover-2:hover{
+    background-color: #D57C14;
+  }
+  .hover-3{
+    color: #D47C14;
+    transition: 0.5s ease;
+    border-bottom: 2px solid #D57C14;
+  }
+  .hover-3:hover{
+    color: #7289A0;
+    border-bottom: 2px solid #7289A0;
+  }
+  .hover-4{
+    transition: background-color 0.5s ease;
+  }
+  .hover-4:hover{
+    background-color: #7289A0;
+  }
+  .hover-5{
+    transition: 0.5s ease;
+  }
+  .hover-5:hover{
+    color: #D47C14;
+  }
+  .ellipse-1::after{
+    content: '';
+    position: absolute;
+    background-image: url(../img/ellipse-right.svg);
+    width: 500px;
+    height: 1115px;
+    bottom: -380px;
+    right: 0;
+  }

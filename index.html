@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <title>Архистратинг</title>
 </head>
 <body>
@@ -21,7 +22,7 @@
                 <div class="mobile-menu__close w-8 -mr-2 hidden">
                     <img src="img/burger-close.svg" alt="">
                 </div>
-                <div class="btn-style px-4 py-2 rounded-sm">
+                <div class="btn-style px-4 py-2 rounded-sm text-sm font-bold">
                     <button class="text-white">
                         Пожертвовать
                     </button>
@@ -49,7 +50,7 @@
             </div>
         </div>
     </div>
-    <header style="position: relative;">
+    <header style="position: relative; background: #FBFBFB; box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.05);">
         <div class="container mx-auto sm:px-5 px-4">
             <div class="flex items-center justify-between xl:py-0 py-2">
                 
@@ -61,17 +62,17 @@
                 <nav class="md:block hidden">
                     <ul class="-mx-3 md:flex hidden">
                         <li class="font-medium mx-3" style="color: #363636;">
-                            <a href="index.html" class="link">
+                            <a href="index.html" class="link hover-1">
                                 О фонде
                             </a>
                         </li>
                         <li class="font-medium mx-3" style="color: #363636;">
-                            <a href="base.html" class="link">
+                            <a href="base.html" class="link hover-1">
                                 Храмы на попечительстве
                             </a>
                         </li>
                         <li class="font-medium mx-3" style="color: #363636;">
-                            <a href="#" class="link">
+                            <a href="#" class="link hover-1">
                                 Контакты
                             </a>
                         </li>
@@ -81,7 +82,7 @@
                 <div class="bars md:hidden cursor-pointer" onclick="">
                     <img src="img/burger.svg" alt="">
                 </div>
-                <div class="btn-style md:px-20 px-4 md:py-7 py-2 rounded-sm">
+                <div class="btn-style md:px-20 px-4 md:py-7 py-2 rounded-sm hover-2 cursor-pointer">
                     <button class="text-white font-bold md:text-xl text-xs">
                         Пожертвовать
                     </button>
@@ -96,42 +97,50 @@
     </header>
     <main>
         <section>
+        <div class="z-10"> 
             <div class="container mx-auto sm:px-5 px-4">
+                <div class="xl:hidden flex justify-center pt-8 ">
+                    <a href="index.html">
+                        <img src="img/logo.svg" alt="">
+                    </a>
+                </div>
                 <div class="pt-9 flex justify-between flex-wrap">
-                    <div class="flex items-center justify-between">
-                        <div class="pt-24 -mb-8">
+                    <div class="flex xl:items-center xl:justify-between xl:flex-nowrap flex-wrap">
+                        <div class="xl:pt-24 pt-8 -mb-8 xl:w-auto sm:w-full w-3/4">
                             <img src="img/4.png" alt="">
                         </div>
-                        <div class="w-1/2 text-center pt-24">
-                            <p class="font-medium text-5xl leading-snug big-text color-72" style="font-family: Alegreya;">
+                        <div class="xl:w-1/2 md:w-3/5 sm:w-3/4 text-center xl:pt-24 pt-16 xl:mx-0 mx-auto">
+                            <p class="font-medium leading-snug xl:text-5xl sm:text-4xl text-3xl big-text color-72" style="font-family: Alegreya;">
                                 Сохраняем и восстанавливаем православные храмы России
                             </p>
                         </div>
-                        <div class="-mt-[3vw]">
+                        <div class="xl:-mt-[3vw] mt-8 xl:w-auto md:w-[45%] sm:w-[62%] w-3/4 xl:ml-0 ml-auto">
                             <img src="img/5.png" alt="">
                         </div>
                     </div>
-                    <div class="flex justify-between items-center pt-44">
+                    <div class="flex justify-between items-center md:flex-nowrap flex-wrap xl:pt-44 pt-20">
                         <div>
-                            <div class="w-3/5 pb-6">
-                                <p>
+                            <div class="lg:w-3/5 sm:w-11/12 w-3/4 pb-6">
+                                <p class="sm:text-base text-sm leading-relaxed">
                                     Ваши ежемесячные пожертвования позволяют планировать бюджет на строительные работы. Даже небольшие суммы в формате постоянных отчислений вносят большой вклад в наше дело
                                 </p>
                             </div>
                             <div>
-                                <a href="#" class="text-xl font-semibold" style="border-bottom: 2px solid #D57C14; color: #D47C14;">
+                                <a href="#" class="text-xl hover-3 font-semibold color-D47">
                                     Внести свой вклад
                                 </a>
                             </div>
                         </div>
-                        <div class="w-5/12">
+                        <div class="xl:w-5/12 lg:w-4/5 w-full md:block hidden">
                             <img src="img/20.png" alt="">
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="ellipse-1 relative"></div>
+        </div>
         </section>
-        <section>
+        <section class="hidden">
             <div class="container mx-auto sm:px-5 px-4">
                 <div class="pt-20 italic text-6xl dark-blue">
                     <span class="text-8xl" style="font-family: Alegreya;">47281</span> храмов и <span class="text-8xl" style="font-family: Alegreya;">1010</span> монастырей
@@ -160,33 +169,34 @@
                 </div>
             </div>
         </section>
-        <section >
+        <section>
+            <div class="ellipse-2 relative"></div>
             <div class="container mx-auto sm:px-5 px-4">
                 <div class="bord-bot pb-20">
                     <div class="pt-14">
                         <h2 class="dark-blue text-8xl font-medium italic">
                             8109
                         </h2>
-                        <p class="text-2xl w-1/2 pt-6">
+                        <p class="sm:text-2xl text-sm leading-relaxed xl:w-1/2 md:w-3/4 pt-6">
                             Храмов, церквей и монастырей на территории России находятся в разрушенном и полуразрушенном состоянии
                         </p>
                     </div>
                     <div>
-                        <div class="flex justify-between items-center pt-8">  
-                            <div>
+                        <div class="flex lg:flex-nowrap flex-wrap justify-between items-center pt-8">  
+                            <div class="sm:w-[63%] w-3/5">
                                 <img src="img/10.png" alt="">
                             </div>
-                            <div>
+                            <div class="lg:w-3/5 sm:w-3/4 w-4/5 lg:ml-0 ml-auto lg:pt-0 pt-8">
                                 <img src="img/11.png" alt="">
                             </div>
                         </div>
                         <div class="pt-20">
-                            <p class="text-6xl text-center font-medium" style="font-family: Alegreya;">
+                            <p class="lg:text-6xl md:text-4xl text-xl text-center font-medium" style="font-family: Alegreya;">
                                 Каждый храм это история нашего народа. Большинство из них представляют огромную архитектурную ценность. Важно сохранить их и передать следующим поколениям.
                             </p>
                         </div>
                         <div class="flex justify-center pt-16">
-                            <button class="text-xl font-semibold py-4 px-8 bg-57 text-white">
+                            <button class="text-xl font-semibold py-4 px-8 bg-57 text-white hover-4">
                                 Поддержать проект  
                             </button>
                         </div>
@@ -196,26 +206,57 @@
         </section>
         <section>
             <div class="container mx-auto sm:px-5 px-4">
-                <div class="bord-bot" style="font-size: 100px;">
-                    Секция для слайдера
+                <div class="bord-bot">
+                    <div style="background: #F4FAFF;">
+                        <div class="flex">
+                            <h3>
+                                Храм Успения Божией Матери в городе Калач
+                            </h3>
+                            <a href="#">
+                                Смотреть весь проект
+                            </a>
+                        </div>
+                        <div class="center">
+                            <div>
+                                <img src="img/30.png" alt="">
+                                <img src="img/31.png" alt="">
+                            </div>
+                            <div>
+                                <img src="img/30.png" alt="">
+                                <img src="img/31.png" alt="">
+                            </div>
+                            <div>
+                                <img src="img/30.png" alt="">
+                                <img src="img/31.png" alt="">
+                            </div>
+                            <div>
+                                <img src="img/30.png" alt="">
+                                <img src="img/31.png" alt="">
+                            </div>
+                            <div>
+                                <img src="img/30.png" alt="">
+                                <img src="img/31.png" alt="">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="pt-20">
             <div class="container mx-auto sm:px-5 px-4">
                 <div class="bord-bot pb-32">
-                    <h2 class="text-9xl dark-blue">
+                    <h2 class="xl:text-9xl dark-blue">
                         Храмы в работе
                     </h2>
                 </div>
             </div>
         </section>
-        <section class="pt-20">
+        <section class="md:pt-20 pt-12">
             <div class="container mx-auto sm:px-5 px-4">
-                <div class="pb-32">
-                    <div class="flex justify-between  items-center">
+                <div class="pb-20">
+                    <div class="md:flex hidden justify-between  items-center">
                         <div class="w-1/2">
-                            <p class="big-text text-5xl font-medium" style="font-family: Algeria;">
+                            <p class="big-text xl:text-5xl lg:text-4xl text-2xl font-medium" style="font-family: Algeria; color: #1F3040;">
                                 Собираем информацию о храмах, рассказываем о ходе восстановления, публикуем беседы со священнослужителями
                             </p>
                             <div class="flex -mx-4 pt-14">
@@ -228,6 +269,23 @@
                         </div>
                         <div class="w-1/3">
                             <img src="img/phone.png" alt="">
+                        </div>
+                    </div>
+                    <div class="md:hidden">
+                        <div>
+                            <p class="big-text sm:text-2xl text-xl font-medium" style="font-family: Algeria; color: #1F3040;">
+                                Собираем информацию о храмах, рассказываем о ходе восстановления, публикуем беседы со священнослужителями
+                            </p>
+                            <div class="mx-auto w-1/2 pt-12">
+                                <img src="img/phone.png" alt="">
+                            </div>
+                            <div class="flex justify-center -mx-4 pt-14">
+                                <button class="blocks mx-4"></button>
+                                <button class="blocks mx-4"></button>
+                                <button class="blocks mx-4"></button>
+                                <button class="blocks mx-4"></button>
+                                <button class="blocks mx-4"></button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -435,5 +493,6 @@
     </footer>
     <script src="js/jquery-js.js"></script>
     <script src="js/main.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 </html>
