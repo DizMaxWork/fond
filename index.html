@@ -18,17 +18,17 @@
 <body>
     <div>
         <div class="mobile-menu hidden">
-            <div class="flex justify-between items-center sm:px-6 ">
+            <div class="flex justify-between items-center sm:px-6 xs:h-16">
                 <div class="mobile-menu__close w-8 -mr-2 hidden">
                     <img src="img/burger-close.svg" alt="">
                 </div>
-                <div class="btn-style px-4 py-2 rounded-sm text-sm font-bold">
-                    <button class="text-white">
+                <div class="btn-style md:px-20 px-4 md:py-7 py-2 rounded-sm hover-2 cursor-pointer">
+                    <button class="text-white font-bold md:text-xl text-xs">
                         Пожертвовать
                     </button>
                 </div>
             </div>
-            <div style="border-bottom: 1px solid #373737; padding-top: 1rem;"></div>
+            <div style="border-bottom: 1px solid #373737;"></div>
             <div class="pt-8 sm:px-6 ">
                 <ul>
                     <li class="mb-4 text-3xl" style="font-family: Alegreya; color: #7289A0;">
@@ -52,8 +52,8 @@
     </div>
     <header>
         <div class="container mx-auto sm:px-5 px-4">
-            <div class="flex items-center justify-between xl:py-0 py-2">
-                
+            <div class="flex items-center justify-between xl:py-0 py-2 xs:h-16 md:h-auto">
+
                 <div class="w-3/12 xl:block hidden pt-4">
                     <a href="#">
                         <img src="img/logo.svg" alt="">
@@ -89,7 +89,7 @@
                 </div>
                 <div class="burger__menu hidden">
                     <div>
-    
+
                     </div>
                 </div>
             </div>
@@ -97,7 +97,7 @@
     </header>
     <main>
         <section>
-        <div class="z-10"> 
+        <div class="z-10">
             <div class="container mx-auto sm:px-5 px-4">
                 <div class="xl:hidden flex justify-center pt-8 ">
                     <a href="index.html">
@@ -152,7 +152,7 @@
                     <div class="md:pt-9">
                         <img src="img/36.png" alt="">
                         <p class="text-xl font-semibold xl:pl-28 pl-4 md:pt-12 lg:pb-0 pt-6 pb-6 md:w-3/4 ">
-                            Огромное количество храмов до сих пор используется не по назначению и находится в плачевном состоянии. 
+                            Огромное количество храмов до сих пор используется не по назначению и находится в плачевном состоянии.
                         </p>
                     </div>
                     <div class="md:w-full w-60">
@@ -166,14 +166,16 @@
                         </p>
                     </div>
                     <div class="xxl:w-3/5 xl:w-4/6 w-full lg:mt-0 -mt-6">
-                        <img src="img/38.png" alt="" class="ml-auto md:w-auto w-32"> 
+                        <img src="img/38.png" alt="" class="ml-auto md:w-auto w-32">
                     </div>
                 </div>
             </div>
         </section>
-        <section>
-            <div class="ellipse-2 relative"></div>
-            <div class="container mx-auto sm:px-5 px-4">
+        <section class="relative">
+            <div class="ellipse-2 absolute">
+                <img src="img/ellipse-left.svg" alt="">
+            </div>
+            <div class="container relative mx-auto sm:px-5 px-4">
                 <div class="bord-bot pb-20">
                     <div class="pt-14">
                         <h2 class="dark-blue text-8xl font-medium">
@@ -184,7 +186,7 @@
                         </p>
                     </div>
                     <div>
-                        <div class="flex lg:flex-nowrap flex-wrap justify-between items-center pt-8">  
+                        <div class="flex lg:flex-nowrap flex-wrap justify-between items-center pt-8">
                             <div class="sm:w-[63%] w-3/5">
                                 <img src="img/10.png" alt="">
                             </div>
@@ -199,60 +201,259 @@
                         </div>
                         <div class="flex justify-center pt-16">
                             <button class="text-xl font-semibold py-4 px-8 bg-57 text-white hover-4">
-                                Поддержать проект  
+                                Поддержать проект
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section>
+
+        <section class="relative">
+            <div class="ellipse-3 absolute">
+                <img src="img/ellipse-right.svg" alt="">
+            </div>
             <div class="container mx-auto sm:px-5 px-4">
-                <div class="bord-bot">
-                    <div style="background: #F4FAFF;">
-                        <div class="flex">
-                            <h3>
+                <div class="bord-bot pb-20">
+                    <div class="xl:ml-60 xs:ml-0 xl:w-1/2 md:w-3/5 xs:w-full xl:pt-4">
+                        <div class="pt-16 xl:mb-10 xs:mb-6">
+                            <p class="font-medium leading-13 xl:text-5xl xs:text-2xl text-3xl big-text color-72" style="font-family: 'Alegreya';">
+                                База храмов <br> <span class="dark-blue">остро нуждающихся <br> в восстановлении</span> <span class="color-D47">(265)</span>
+                            </p>
+                        </div>
+                        <div>
+                            <a href="#" class="xl:text-xl xs:text-base hover-3 font-semibold color-D47">
+                                Смотреть все
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="wrapper-base-church-slider flex justify-between relative xl:mt-28 xs:mt-9">
+
+                        <div class="wrapper-bcs-template flex relative">
+                            <div class="bcs-template bcs-t1">
+                                <img src="img/slide_1.png" alt="">
+                            </div>
+                            <div class="bcs-template bcs-t2 absolute">
+                                <img src="img/slide_2.png" alt="">
+                            </div>
+                            <div class="bcs-template bcs-t3">
+                                <img src="img/slide_3.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="wrapper-bcs-template flex relative">
+                            <div class="bcs-template bcs-t4">
+                                <img src="img/slide_3.png" alt="">
+                            </div>
+                            <div class="bcs-template bcs-t5 absolute">
+                                <img src="img/slide_2.png" alt="">
+                            </div>
+                            <div class="bcs-template bcs-t6">
+                                <img src="img/slide_1.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="wrapper-bcs-template flex relative">
+                            <div class="bcs-template bcs-t1">
+                                <img src="img/slide_1.png" alt="">
+                            </div>
+                            <div class="bcs-template bcs-t2 absolute">
+                                <img src="img/slide_2.png" alt="">
+                            </div>
+                            <div class="bcs-template bcs-t3">
+                                <img src="img/slide_3.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="wrapper-bcs-template flex relative">
+                            <div class="bcs-template bcs-t4">
+                                <img src="img/slide_3.png" alt="">
+                            </div>
+                            <div class="bcs-template bcs-t5 absolute">
+                                <img src="img/slide_2.png" alt="">
+                            </div>
+                            <div class="bcs-template bcs-t6">
+                                <img src="img/slide_1.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="wrapper-bcs-template flex relative">
+                            <div class="bcs-template bcs-t1">
+                                <img src="img/slide_1.png" alt="">
+                            </div>
+                            <div class="bcs-template bcs-t2 absolute">
+                                <img src="img/slide_2.png" alt="">
+                            </div>
+                            <div class="bcs-template bcs-t3">
+                                <img src="img/slide_3.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="wrapper-bcs-template flex relative">
+                            <div class="bcs-template bcs-t4">
+                                <img src="img/slide_3.png" alt="">
+                            </div>
+                            <div class="bcs-template bcs-t5 absolute">
+                                <img src="img/slide_2.png" alt="">
+                            </div>
+                            <div class="bcs-template bcs-t6">
+                                <img src="img/slide_1.png" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="flex justify-center pt-16">
+                        <button class="text-xl font-semibold py-4 px-8 bg-57 text-white hover-4">
+                            Добавить храм
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="relative">
+            <div class="ellipse-4 absolute">
+                <img src="img/ellipse-left.svg" alt="">
+            </div>
+            <div class="container relative mx-auto sm:px-5 px-4">
+                <div class="xl:py-20 xs:py-6">
+                    <h2 class="xl:text-9xl dark-blue xs:text-4xl">
+                        Храмы в работе
+                    </h2>
+                </div>
+                <div>
+                    <div style="background: #F4FAFF;" class="xxl:px-20 py-10 sm:px-5 px-4">
+                        <div class="flex justify-between flex-wrap mb-10 xs:mb-6">
+                            <h3 class="md:text-4xl xs:text-2xl mb-6" style="font-family: Alegreya;">
                                 Храм Успения Божией Матери в городе Калач
                             </h3>
-                            <a href="#">
+                            <a href="#" class="xl:text-xl xs:text-base hover-5 font-semibold color-72 h-full underline">
                                 Смотреть весь проект
                             </a>
                         </div>
-                        <div class="center">
-                            <div>
-                                <img src="img/30.png" alt="">
-                                <img src="img/31.png" alt="">
+                        <div class="flex overflow-x-auto scrollbar pb-6">
+                            <div class="history-item sm:mr-14 xs:mr-4">
+                                <div class="center">
+                                    <div class="flex flex-col border-r border-grey sm:pr-14 xs:pr-4">
+                                        <div class="flex md:mb-6 xs:mb-4">
+                                            <div class="history-item-l1 md:w-auto md:pr-4 xs:w-6/12 xs:pr-1.5">
+                                                <img src="img/30.png" alt="" >
+                                            </div>
+                                            <div class="history-item-l1 md:w-auto md:pl-4 xs:w-6/12 xs:pl-1.5">
+                                                <img src="img/31.png" alt="" >
+                                            </div>
+                                        </div>
+                                        <div class="flex">
+                                            <div class="w-full history-item-l2 ">
+                                                <img src="img/32.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-1">
+                                        <p class="md:text-3xl xs:text-2xl mt-2.5 header-font">1750 год</p>
+                                        <p class="md:text-2xl  xs:text-xl md:mt-5 xs:mt-4 mb-2 header-font ">Построено каменное здание храма</p>
+                                        <p class="md:text-base  xs:text-sm leading-normal">Строилось всеми жителями – кто-то приносил яйца для раствора, кто-то делал кирпичи</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div>
-                                <img src="img/30.png" alt="">
-                                <img src="img/31.png" alt="">
+
+                            <div class="history-item">
+                                <div class="center">
+                                    <div class="flex">
+                                        <div class="flex flex-col md:mr-6 xs:mr-4">
+                                            <div class="w-full history-item-l1 mb-4 ">
+                                                <img src="img/33.png" alt="">
+                                            </div>
+                                            <div class="w-full history-item-l2">
+                                                <img src="img/35.png" alt="" class="history-item-l2">
+                                            </div>
+                                        </div>
+                                        <div class="flex">
+                                            <div class="md:h-full history-item-l3">
+                                                <img src="img/34.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-1">
+                                        <p class="md:text-3xl xs:text-2xl mt-2.5 header-font">1750 год</p>
+                                        <p class="md:text-2xl  xs:text-xl md:mt-5 xs:mt-4 mb-2 header-font">Построено каменное здание храма</p>
+                                        <p class="md:text-base  xs:text-sm leading-normal">Строилось всеми жителями – кто-то приносил яйца для раствора, кто-то делал кирпичи</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div>
-                                <img src="img/30.png" alt="">
-                                <img src="img/31.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-14">
+                    <div style="background: #F4FAFF;" class="xxl:px-20 py-10 sm:px-5 px-4">
+                        <div class="flex justify-between flex-wrap mb-10 xs:mb-6">
+                            <h3 class="md:text-4xl xs:text-2xl mb-6" style="font-family: Alegreya;">
+                                Храм Успения Божией Матери в городе Калач
+                            </h3>
+                            <a href="#" class="xl:text-xl xs:text-base hover-5 font-semibold color-72 h-full underline">
+                                Смотреть весь проект
+                            </a>
+                        </div>
+                        <div class="flex overflow-x-auto scrollbar pb-6">
+                            <div class="history-item sm:mr-14 xs:mr-4">
+                                <div class="center">
+                                    <div class="flex flex-col border-r border-grey sm:pr-14 xs:pr-4">
+                                        <div class="flex md:mb-6 xs:mb-4">
+                                            <div class="history-item-l1 md:w-auto md:pr-4 xs:w-6/12 xs:pr-1.5">
+                                                <img src="img/30.png" alt="" >
+                                            </div>
+                                            <div class="history-item-l1 md:w-auto md:pl-4 xs:w-6/12 xs:pl-1.5">
+                                                <img src="img/31.png" alt="" >
+                                            </div>
+                                        </div>
+                                        <div class="flex">
+                                            <div class="w-full history-item-l2 ">
+                                                <img src="img/32.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-1">
+                                        <p class="md:text-3xl xs:text-2xl mt-2.5 header-font">1750 год</p>
+                                        <p class="md:text-2xl  xs:text-xl md:mt-5 xs:mt-4 mb-2 header-font">Построено каменное здание храма</p>
+                                        <p class="md:text-base  xs:text-sm">Строилось всеми жителями – кто-то приносил яйца для раствора, кто-то делал кирпичи</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div>
-                                <img src="img/30.png" alt="">
-                                <img src="img/31.png" alt="">
-                            </div>
-                            <div>
-                                <img src="img/30.png" alt="">
-                                <img src="img/31.png" alt="">
+
+                            <div class="history-item">
+                                <div class="center">
+                                    <div class="flex">
+                                        <div class="flex flex-col md:mr-6 xs:mr-4">
+                                            <div class="w-full history-item-l1 mb-4 ">
+                                                <img src="img/33.png" alt="">
+                                            </div>
+                                            <div class="w-full history-item-l2">
+                                                <img src="img/35.png" alt="" class="history-item-l2">
+                                            </div>
+                                        </div>
+                                        <div class="flex">
+                                            <div class="md:h-full history-item-l3">
+                                                <img src="img/34.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-1">
+                                        <p class="md:text-3xl xs:text-2xl mt-2.5 header-font">1750 год</p>
+                                        <p class="md:text-2xl  xs:text-xl md:mt-5 xs:mt-4 mb-2 header-font">Построено каменное здание храма</p>
+                                        <p class="md:text-base  xs:text-sm">Строилось всеми жителями – кто-то приносил яйца для раствора, кто-то делал кирпичи</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="pt-20">
-            <div class="container mx-auto sm:px-5 px-4">
-                <div class="bord-bot pb-32">
-                    <h2 class="xl:text-9xl dark-blue">
-                        Храмы в работе
-                    </h2>
-                </div>
-            </div>
-        </section>
+
         <section class="md:pt-20 pt-12">
             <div class="container mx-auto sm:px-5 px-4">
                 <div class="pb-20">
@@ -490,11 +691,12 @@
                             </ul>
                         </div>
                 </div>
-            </div>  
+            </div>
         </div>
     </footer>
     <script src="js/jquery-js.js"></script>
-    <script src="js/main.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
 </html>
