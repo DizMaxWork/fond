@@ -95,20 +95,18 @@ $(document).ready(function (){
 // drag autoslider start
 
 
+$(".bcs-template").click(function (e) {
+    if($('.wrapper-base-church-slider').hasClass('active')){
+        e.preventDefault();
+    }
+});
+
 const slider = document.querySelector('.wrapper-base-church-slider');
 let isDown = false;
 let startX;
 let scrollLeft = 0;
 
-let listener = function () {
-    if(($(document).scrollTop() + $(window).height() > $('.wrapper-base-church-slider').offset().top && $(document).scrollTop() - $('.wrapper-base-church-slider').offset().top < $('.wrapper-base-church-slider').height())){
-        if(scrollLeft == 0){
-            setTimeout('pageScroll()', 1200);
-            document.removeEventListener('scroll', listener, false);
-        }
-    }
-};
-document.addEventListener('scroll', listener, false);
+setTimeout('pageScroll()', 1000);
 
 
 slider.addEventListener('mousedown', (e) => {
@@ -129,13 +127,16 @@ slider.addEventListener('mouseleave', () => {
     isDown = false;
     slider.classList.remove('active');
     slider.classList.remove('focus');
-   // setTimeout('pageScroll()', 1200);
+    setTimeout('pageScroll()', 500);
 });
 
 
 slider.addEventListener('mouseup', () => {
     isDown = false;
-    slider.classList.remove('active');
+    setTimeout(function(){
+        slider.classList.remove('active')
+    }, 100);
+
     beginMomentumTracking();
 });
 
@@ -144,7 +145,7 @@ slider.addEventListener('mousemove', (e) => {
     if(!isDown) return;
     e.preventDefault();
     const x = e.pageX - slider.offsetLeft;
-    const walk = (x - startX) * 3; //scroll-fast
+    const walk = (x - startX) * 1; //scroll-fast
     var prevScrollLeft = slider.scrollLeft;
     slider.scrollLeft = scrollLeft - walk;
     velX = slider.scrollLeft - prevScrollLeft;
@@ -189,13 +190,44 @@ function pageScroll() {
             }, 1200);
         }
         //set scrolling time start
-        my_time = setTimeout('pageScroll()', 10);
+        my_time = setTimeout('pageScroll()', 15);
         //set scrolling time end
     }
 }
 
+
 // drag autoslider end
 
 
+// grag hrams in works
+
+$(document).ready(function() {
+    $('.scrollbar').mousedown(function (event) {
+        $(this)
+            .data('down', true)
+            .data('x', event.clientX)
+            .data('scrollLeft', this.scrollLeft)
+            .addClass("dragging");
+
+        return false;
+    }).mouseup(function (event) {
+        $(this)
+            .data('down', false)
+            .removeClass("dragging");
+    }).mousemove(function (event) {
+        if ($(this).data('down') == true) {
+            this.scrollLeft = $(this).data('scrollLeft') + $(this).data('x') - event.clientX;
+        }
+    });
+    $(window).mouseout(function (event) {
+        if ($('.team-form-data').data('down')) {
+            try {
+                if (event.originalTarget.nodeName == 'BODY' || event.originalTarget.nodeName == 'HTML') {
+                    $('.team-form-data').data('down', false);
+                }
+            } catch (e) {}
+        }
+    });
+});
 
 
