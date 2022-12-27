@@ -820,6 +820,10 @@ video {
   justify-content: space-between;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .overflow-x-auto {
   overflow-x: auto;
 }
@@ -887,6 +891,10 @@ video {
   padding-bottom: 2rem;
 }
 
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
 .pr-12 {
   padding-right: 3rem;
 }
@@ -927,10 +935,6 @@ video {
   padding-left: 2rem;
 }
 
-.pb-4 {
-  padding-bottom: 1rem;
-}
-
 .pt-10 {
   padding-top: 2.5rem;
 }
@@ -953,10 +957,6 @@ video {
 
 .pt-9 {
   padding-top: 2.25rem;
-}
-
-.pb-10 {
-  padding-bottom: 2.5rem;
 }
 
 .pb-32 {
@@ -1016,12 +1016,12 @@ video {
   font-weight: 500;
 }
 
-.font-bold {
-  font-weight: 700;
-}
-
 .font-semibold {
   font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .italic {
@@ -1032,12 +1032,12 @@ video {
   line-height: 1.5;
 }
 
-.leading-snug {
-  line-height: 1.375;
-}
-
 .leading-relaxed {
   line-height: 1.625;
+}
+
+.leading-snug {
+  line-height: 1.375;
 }
 
 .text-white {
@@ -1220,10 +1220,6 @@ video {
     font-size: 1.5rem;
     line-height: 2rem;
   }
-
-  .sm\:leading-snug {
-    line-height: 1.375;
-  }
 }
 
 @media (min-width: 768px) {
@@ -1317,6 +1313,16 @@ video {
     justify-content: center;
   }
 
+  .md\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .md\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
   .md\:px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
@@ -1325,16 +1331,6 @@ video {
   .md\:py-7 {
     padding-top: 1.75rem;
     padding-bottom: 1.75rem;
-  }
-
-  .md\:py-4 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-
-  .md\:px-8 {
-    padding-left: 2rem;
-    padding-right: 2rem;
   }
 
   .md\:pb-6 {
@@ -1516,6 +1512,11 @@ video {
     padding-bottom: 0px;
   }
 
+  .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .lg\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
@@ -1549,11 +1550,6 @@ video {
   .lg\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
-  }
-
-  .lg\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 
   .lg\:leading-snug {
@@ -1679,8 +1675,8 @@ video {
     padding-top: 6rem;
   }
 
-  .xl\:pt-44 {
-    padding-top: 11rem;
+  .xl\:pl-24 {
+    padding-left: 6rem;
   }
 
   .xl\:pl-28 {
@@ -1689,10 +1685,6 @@ video {
 
   .xl\:pt-4 {
     padding-top: 1rem;
-  }
-
-  .xl\:pl-24 {
-    padding-left: 6rem;
   }
 
   .xl\:text-xl {

@@ -442,6 +442,25 @@ h1, h2, h3, h4, .header-font {
     left: 0;
 }
 
+.bg-sint-1{
+    left: 16px;
+    bottom: -120px;
+}
+
+.bg-sint-2{
+    right: 0;
+    top: 56px;
+    height: 100%;
+    width: 480px;
+}
+
+.bg-sint-2 img{
+    right: -58px;
+    top: 0;
+    height: 100%;
+}
+
+
 .bcs-template{
     position: relative;
 }
