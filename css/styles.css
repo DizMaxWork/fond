@@ -860,6 +860,10 @@ video {
   justify-content: space-between;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .overflow-x-auto {
   overflow-x: auto;
 }
@@ -1001,6 +1005,7 @@ video {
 
 .pb-32 {
   padding-bottom: 8rem;
+<<<<<<< HEAD
 }
 
 .pb-10 {
@@ -1013,6 +1018,8 @@ video {
 
 .pl-6 {
   padding-left: 1.5rem;
+=======
+>>>>>>> 58c0dcf643ecf1bdff2df3d7b04aaeda54553993
 }
 
 .text-center {
