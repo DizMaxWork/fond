@@ -387,7 +387,13 @@ h1, h2, h3, h4, .header-font {
 .hover-5:hover {
     color: #D47C14;
 }
-
+.hover-6{
+    transition: 0.5s ease;
+}
+.hover-6:hover{
+    background-color: #1F3040;
+    color: #FFFFFF;
+}
 .ellipse-1::after {
     content: '';
     position: absolute;
@@ -610,3 +616,22 @@ h1, h2, h3, h4, .header-font {
     }
 
 }
+.checkbox-block{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #C1C1C1;
+    border-radius: 2px;
+ }
+ .checkbox:checked + .orange-checkbox-block{
+    margin: 3px;
+    position: absolute;
+    background: #D57C14;
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+ }
+ .pop-up__btn{
+    background: #D57C14;
+    border-radius: 2px;
+ }
